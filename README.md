@@ -11,6 +11,6 @@ It was coded with Bootstrap and vanilla JavaScript, but I'm hoping to remake thi
 ## How to use this app
 
 1: Open the app in your browser.
-2: Type/paste in the URl you want to save. (MUST INCLUDE http:// or https://)
+2: Type/paste in the URL you want to save. (MUST INCLUDE http:// or https://)
 3: Click the "Add +" button at the bottom of the box
 4: Voila! Your site is saved. Close the browser and come back to it later and your saves will still be there. (Unless you clear your cache).
