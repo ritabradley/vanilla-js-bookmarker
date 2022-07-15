@@ -1,0 +1,154 @@
+body {
+    padding: 30px;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/518746/mountains.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .content {
+    margin: 0 auto;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 450px;
+  }
+  
+  .floater {
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    ;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4) all;
+    z-index: 11;
+  }
+  
+  .floater input[type=text] {
+    padding: 30px 20px;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4) all;
+  }
+  
+  .floater-bottom {
+    padding: 6px 10px 7px;
+    text-align: right;
+    border-top: 1px solid #DDD;
+  }
+  
+  .floater-bottom button {
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: #162F3B;
+    border: none;
+  }
+  
+  .floater-bottom:hover button {
+    background: #162F3B;
+    text-decoration: none;
+  }
+  
+  .overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease opacity;
+    z-index: 10;
+    pointer-events: none;
+  }
+  
+  body.show-floater .floater {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  body.show-floater .floater input[type=text] {
+    padding: 50px 20px;
+    font-size: 18px;
+  }
+  
+  body.show-floater .overlay {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  
+  /*Bookmark List*/
+  
+  .bookmarks-list {
+    position: relative;
+    z-index: 9;
+  }
+  
+  .bookmark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    background: rgba(22, 47, 59, 0.8);
+    color: #fff;
+    padding: 20px;
+    transition: 0.3s ease all;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .bookmark:hover {
+    color: #36656F;
+    text-decoration: none;
+  }
+  
+  .bookmark:visited .bookmark:active {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .bookmark:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .bookmark:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 0;
+  }
+  
+  .bookmark .img {
+    background-color: #bbb;
+    border-radius: 5px;
+    background: url();
+    background-size: cover;
+    background-position: top center;
+    width: 120px;
+    height: 60px;
+    margin: 20px;
+  }
+  
+  .bookmark .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .bookmark .fa-trash {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ddd;
+    transition: 0.5s ease color;
+    cursor: pointer;
+  }
+  
+  .bookmark:hover .fa-trash {
+    color: #999;
+  }
